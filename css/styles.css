@@ -1,0 +1,251 @@
+body ,html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  font-family: Lato, Times, "Times New Roman";
+  font-size: 20px;
+  color:  #800080;
+}
+
+
+header{
+  display: flex;
+    justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+  width: 900px;
+  height: 130px;
+  background-color: #fff;
+  border-bottom: 2px solid #005f6a;
+  clear: both;
+}
+
+
+#pena img {
+  margin: 5px 5px;
+  height: 100px;
+  width: 100px;
+  box-shadow: 4px 4px 4px #DF5286;
+  transition: background-color .1s;
+}
+
+
+#pena img:hover {
+  box-shadow: 1px 1px 1px #000;
+  background-color: #808080;
+}
+
+
+#header-title {
+  margin-left: auto;
+  text-align: right;
+  padding: 0 20px;
+  margin: -10px;
+  color: #000080;
+}
+
+
+#pena-view {
+  background: no-repeat center/cover url("../images/code.jpg");
+  width: 900px;
+  height: 450px;
+  margin-top: 5px;
+  max-width: 100%;
+  text-align: center; 
+  line-height: 80px;
+  font-size: 2em;
+  color: #DF5286;
+  vertical-align: middle;
+  box-shadow: 4px 4px 4px #888;
+}
+
+
+.bob {
+  font-family: Lato, sans-serif;
+}
+
+#content {
+  display: flex;
+  width: 900px;
+  max-width: 100%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-work {
+  width: 900px;
+  max-width: 100%;
+  font-size: 1em;
+}
+
+.style-card {
+  box-shadow: 2px 2px 2px  #808080;
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.style-card:hover {
+  background-color: #c0c0c0;
+}
+
+.power img {
+  overflow: visible;
+  height:200px;
+  width: 100%;
+  object-fit: fill;
+}
+
+.power p {
+  font-style: italic;
+  font-size: 15px;
+  width: 100%;
+}
+
+.SuggestedSites {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #953;
+}
+
+footer {
+  width: 900px;
+  max-width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+// breakpoints
+
+
+
+@media screen and (max-width: 780px) {
+
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #pena-view {
+    height: 50px;
+    font-size: 1em;
+    line-height: 150px;
+  }
+
+  #pena img {
+    height: 90px;
+    width: 90px;
+    box-shadow: 2px 2px 2px #aab;
+  }
+
+  header {
+    display: flex;
+    height: 120px;
+    background-color: #fff;
+    border-bottom: 3px solid #7d97ad;
+  }
+
+  #header-title {
+    margin: -30px 1px;
+  }
+
+  .style-card {
+    min-width:30%;
+  }
+  .style-card {
+    min-width: 40%;
+    max-width: 50%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  
+  .power {
+    display: center;
+    width:100%;
+  }
+
+  .power img{
+    height:150px;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .power p {
+    font-size: 1em;
+  }
+
+  .feature-work {
+    font-size: 1em;
+    text-align: center;
+  }
+
+
+@media screen and (max-width: 550px) {
+
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #pena-view {
+    height: 200px;
+    font-size: 2em;
+    line-height: 150px;
+  }
+
+  #pena img {
+    height: 65px;
+    width: 65px;
+    box-shadow: 2px 2px 2px #aab;
+  }
+
+    header {
+    display: flex;
+    margin-left: auto;
+    height: 120px;
+    background-color: #fff;
+    border-bottom: 1px solid #7d97ad;
+  }
+
+  .style-card {
+    min-width: 45%;
+    max-width: 50%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .power p {
+    font-size: 0.8em;
+  }
+
+  .power img {
+    height: 130px;
+    object-fit: fill;
+  }
+
+  .bob {
+    font-size: 1em;
+  }
+
+}
